@@ -8,7 +8,7 @@ jobs:
     steps:
     #  - IN: sample-script-31  #girepo reso name
       - IN: image1
-      - IN: keyvalue
+      #- IN: keyvalue
       - IN: sample-private1
       - IN: gr1
       #- IN: script
@@ -77,8 +77,8 @@ jobs:
     type: runCLI
     steps:
       - IN: image1  
-      - IN: key-test1
-      - IN: envtest
+      #- IN: key-test1
+      #- IN: envtest
       - TASK:
         - script: printenv 
   #      - script: echo && echo && echo
@@ -99,11 +99,11 @@ jobs:
   - name: printenvs-runSh
     type: runSh
     steps:
-      - IN: node-integration
+      #- IN: node-integration
       - IN: image1
-      - IN: key-test1
-      - IN: envtest
-      - IN: keyvalue
+      #- IN: key-test1
+      #- IN: envtest
+      #- IN: keyvalue
      
       - IN: test_params
       - TASK:
@@ -135,7 +135,7 @@ jobs:
     steps:
     #  - IN: sample-script-31  #girepo reso name
       - IN: image1
-      - IN: keyvalue
+     # - IN: keyvalue
       - IN: sample-private1
       #- IN: script
       #- IN: sample-publicchangename
