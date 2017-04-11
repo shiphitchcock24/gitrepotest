@@ -17,12 +17,12 @@ resources:
       buildOnPullRequest: true
      # buildOnTagPush: true
       
-  - name: sample-private1
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiphitchcock24/testprivate
-      branch: master
+#  - name: sample-private1
+#    type: gitRepo
+ #   integration: github
+  #  pointer:
+   #   sourceName: shiphitchcock24/testprivate
+    #  branch: master
   #    buildOnPullRequest: true
      # buildOnTagPush: true #normally false by default
      #buildOnPullRequest: false #since this is true by default
