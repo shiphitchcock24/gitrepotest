@@ -6,11 +6,11 @@ jobs:
     type: runSh
     steps:
       - IN: image1
-      #- IN: sample-private1
+      - IN: sample-publicproject2
       - IN: gr1
       - IN: sample-publicchangename
       - TASK:
-       #  - script: ./IN/sample-private1/gitRepo/echo.sh
+         - script: ./IN/sample-publicproject2/gitRepo/echo.sh
          - script: echo 'api'
          - script: echo 'test'
          - script: ./IN/sample-publicchangename/gitRepo/echo.sh
@@ -22,8 +22,8 @@ jobs:
     steps:
       - IN: image1
      # - IN: keyvalue
-      #- IN: sample-private1
+      - IN: sample-publicproject2
       - TASK:
-        # - script: ./IN/sample-private1/gitRepo/echo.sh
+         - script: ./IN/sample-publicproject2/gitRepo/echo.sh
          - script: echo 'api'
     
