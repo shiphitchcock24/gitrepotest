@@ -5,7 +5,7 @@ resources:
     pointer:
       sourceName: shiphitchcock24/sample-script
       branch: master
-      #buildOnPullRequest: true
+      buildOnPullRequest: true
     #  buildOnTagPush: true
      
   - name: sample-publicproject2
