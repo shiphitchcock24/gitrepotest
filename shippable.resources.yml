@@ -13,7 +13,7 @@ resources:
     integration: github
     pointer:
       sourceName: shiphitchcock24/sample-script2
-      branch: non
+      branch: master
     #  buildOnPullRequest: true
      # buildOnTagPush: true
       
