@@ -17,9 +17,6 @@ resources:
       buildOnPullRequest: true
      # buildOnTagPush: true
       
-
-  
-      
   - name: sample-private1
     type: gitRepo
     integration: github
@@ -30,46 +27,7 @@ resources:
      # buildOnTagPush: true #normally false by default
      #buildOnPullRequest: false #since this is true by default
      #buildOnCommit: false #since this is true by default
-      
  
-  - name: myEmailS2
-    type: notification
-    pointer:
-      method: email
-      recipients: 
-        - "sreya@shippable.com"
-        - "shiphitchcock4@gmail.com"
-        - "sreyaj10@gmail.com"
-        
-  - name: notify-email
-    type: notification
-    pointer:
-      method: email
-      recipients: 
-        - "sreya@shippable.com"
-        - "shiphitchcock4@gmail.com"
-       # - "sreyaj10@gmail.com" 
-   
-  - name: irc
-    type: notification
-    pointer:
-      method: irc
-      recipients: 
-        - "webchat.irchighway.net#test-rc"
-      #  - "webchat.irchighway.net#irc-three"
-        
-  - name: notify-irc
-    type: notification
-    pointer:
-      method: irc
-      recipients: 
-      #  - "webchat.irchighway.net#test-rc"
-        - "webchat.irchighway.net#irc-three"   
-        
-
-        
-  
-  
   - name: image1
     type: image
     integration: ship4-docker
