@@ -5,8 +5,8 @@ resources:
     pointer:
       sourceName: shiphitchcock24/sample-script
       branch: master
-      buildOnPullRequest: true
-      buildOnTagPush: true
+      #buildOnPullRequest: true
+    #  buildOnTagPush: true
      
   - name: sample-publicproject2
     type: gitRepo
