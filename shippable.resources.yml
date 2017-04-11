@@ -26,7 +26,7 @@ resources:
     pointer:
       sourceName: shiphitchcock24/testprivate
       branch: master
-      buildOnPullRequest: true
+  #    buildOnPullRequest: true
      # buildOnTagPush: true #normally false by default
      #buildOnPullRequest: false #since this is true by default
      #buildOnCommit: false #since this is true by default
