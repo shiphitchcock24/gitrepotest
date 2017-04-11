@@ -3,7 +3,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiphitchcock4/sample-script
+      sourceName: shiphitchcock24/sample-script
       branch: master
       #buildOnPullRequest: true
       buildOnTagPush: true
@@ -12,7 +12,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiphitchcock4/sample-script2
+      sourceName: shiphitchcock24/sample-script2
       branch: non
     #  buildOnPullRequest: true
      # buildOnTagPush: true
@@ -29,23 +29,14 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiphitchcock4/testprivate
+      sourceName: shiphitchcock24/testprivate
       branch: master
      # buildOnPullRequest: true
      # buildOnTagPush: true #normally false by default
      #buildOnPullRequest: false #since this is true by default
      #buildOnCommit: false #since this is true by default
       
-  - name: mySlackS2
-    type: notification
-    integration: "ship_slack"
-    pointer:
-      recipients:
-       # - theyare
-        - "#pipeline-pvt"
-        - "#pipeline-public"
-        - "@shiphitchcock4"
-
+ 
   - name: myEmailS2
     type: notification
     pointer:
@@ -80,23 +71,8 @@ resources:
       #  - "webchat.irchighway.net#test-rc"
         - "webchat.irchighway.net#irc-three"   
         
-  - name: notify-hipchat
-    type: notification
-    integration: "notify-hipchat"
-    pointer:
-      recipients:
-        - "#rc-public" 
-        - "#rc-private"
-        - "@shiptest-rc-ow"
+
         
-  - name: notify-slack
-    type: notification
-    integration: "notify-slack"
-    pointer:
-      recipients:
-        - "#rc-public" 
-        - "#rc-private"
-        - "@shiptest-rc-ow"
   
   
   - name: image1
@@ -112,18 +88,4 @@ resources:
       params:
         TEST: rc    
   
-  - name: key-test1
-    type: integration
-    integration: key-test  
-    
-  - name: keyvalue
-    type: integration
-    integration: keyvalue
-    
-  - name: envtest
-    type: integration
-    integration: envtest 
-    
-  - name: node-integration
-    type: integration
-    integration: "node-integration"
+  
